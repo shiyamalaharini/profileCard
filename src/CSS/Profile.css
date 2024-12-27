@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.QaIE6Q78P63J0fKl5uyPJwHaEK&pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+
+.card-container{
+    background-color: rgb(53, 53, 135);
+
+    color: azure;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px -10px rgb(3, 5, 20);
+    padding-top: 30px;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+h3{
+    margin: 10px 0px;
+}
+
+h4{
+    margin: 10px 0px;
+    text-transform:uppercase;
+}
+
+p{
+    margin: 10px 0px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+.status{
+    background-color: aquamarine;
+    color: black;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 3px 7px;
+    position: absolute;
+    top: 30px;
+    left:40px
+}
+
+.online{
+    background-color: green;
+    color: azure;
+}
+.offline{
+    background-color: red;
+    color: azure;
+}
+
+img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 3px solid rgb(123, 124, 151);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    padding-bottom: 20px;
+}
+
+.btn1{
+    width: 100px;
+    background-color: #2b0979dc;
+    color: azure;
+    border: 1px soild #272c5adc ;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.btn2{
+    width: 100px;
+    background-color:transparent;
+    color: azure;
+    border: 1px soild #636680dc ;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.skills{
+    background-color: rgb(25, 25, 104);
+   text-align: center;
+   
+}
+
+.skills ul {
+list-style-type: none;
+margin: 1px;
+padding: 3px;
+}
+
+.skills ul li{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid rgb(247, 241, 241);
+    border-radius: 3px;
+    margin: 0px 3px 3px 0px;
+    font-size: 12px;
+}
+.Profile-cards-container{
+display: flex;
+flex-direction: row;
+overflow: auto;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+gap: 10px;
+
+
+   
+     
+
+}
+@media screen and (max-width: 600px) {
+    .Profile-cards-container {
+        flex-direction: column;
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+        scroll-padding: 10px;
+
+
+        
+        
+    }
+}
